@@ -6,7 +6,7 @@
 /*   By: kcowle <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/01 12:44:09 by kcowle            #+#    #+#             */
-/*   Updated: 2016/06/01 17:46:13 by kcowle           ###   ########.fr       */
+/*   Updated: 2016/06/04 16:01:51 by kcowle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,10 @@ typedef struct s_raw_map{
 	char point;
 	struct s_raw_map *next;
 }				t_raw_map;
+
+typedef struct s_env{
+	t_map map;
+	t_piece piece;
+	int player;
+}				t_env;
+void	algo(t_env env, t_raw_map **b);
